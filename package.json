@@ -1,0 +1,56 @@
+{
+  "name": "schema-node-app-view",
+  "version": "2.0.0",
+  "description": "Application level Vue 3 views for schema-node, built on schema-node-app and schema-node-vue-view.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.11.8",
+    "vue": "^3.5.24"
+  },
+  "keywords": [
+    "vue",
+    "element-plus",
+    "schema",
+    "ui",
+    "component",
+    "application"
+  ],
+  "author": "kurapica125@outlook.com",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/language-core": "^3.3.12",
+    "typescript": "5.7.3",
+    "vite": "^6.3.2",
+    "vite-plugin-dts": "^5.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurapica/schema-node-app-view.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "schema-node-core": "^2.0.15",
+    "schema-node-vue-view": "^2.0.5",
+    "schema-node-app": "^2.0.7"
+  }
+}
